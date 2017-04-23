@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// @interface = class
 @interface ViewController : UIViewController
 
+// public class members avail to other classes
+@property (nonatomic, strong) NSString *name;
 
-@end
+@end // class definition ends
 

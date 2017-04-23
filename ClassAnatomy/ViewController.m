@@ -9,7 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+//private class memebers
+@property (nonatomic, strong) NSString *vehicle;
 @end
 
 @implementation ViewController
@@ -17,6 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"Name: %@", _name);
+    NSLog(@"Name: %@", self.name);
+    
+    self.name = @"Jack";
+    
+    NSLog(@"Name: %@", _name);
+    NSLog(@"Name: %@", self.name);
+    
+    _name = @"Peter";
+    
+    NSLog(@"Name: %@", _name);
+    NSLog(@"Name: %@", self.name);
+    
+    [self setName:@"Sylvia"];
+    
+    NSLog(@"Name: %@", _name);
+    NSLog(@"Name: %@", self.name);
 }
 
 
